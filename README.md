@@ -1,12 +1,12 @@
 # Calculator
 JavaScript Calculator App
 
-  # Vanilla Javascript
+Vanilla Javascript
   
-  # No External Libraries
+No External Libraries
   
-  # Performs any calculation of plus,minus,multiply and divide operations.
+Performs any calculation of plus,minus,multiply and divide operations.
   
-  #Author:Sukhbir Singh Bedi
+#Author:Sukhbir Singh Bedi
   
-  #email:sukhbirbedi03@gmail.com
+email:sukhbirbedi03@gmail.com
