@@ -1,29 +1,30 @@
-.box{
-	width:100%;
-	padding: 0;
-	height:115px;
-	background-color:  #1affb2;
+button.box,#final{
+	width: 25%;
+	display: block;
+	float: left;
+	height:110px;
+	background-color:#1affb2;
 	box-shadow: none;
 	border: none;
 	outline: none;
 	transition: background-color 0.5s;
 }
 
-.box:hover{
+.box:hover, #final:hover{
 	background-color: #00e699;
 }
 
-.special{
+button.special{
 	background-color:#00cc88;
 }
 
-.col-md-3, .col-md-12{
-	padding: 0;
+.col-md-2,.col-md-8{
+	padding:0 10%;
 }
 
 #numberinput{
 	background-color:#00e699;
-	height:70px;
+	height:60px;
 	border: none;
 	box-shadow: none;
 	width:100%;
@@ -35,21 +36,38 @@
 	outline:none;
 }
 
-.container{
-	padding:0 20%;
-}
 
 body{
-	background-color: #f7f7f7;
+	background-color: #333333;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 300;
 	letter-spacing: 1px;
 	word-spacing: 3px;
 	font-size: 32px;
-	text-align: center;
-	text-transform: uppercase;
 }
 
 h1{
-	padding-top: 25px;
+	padding: 10px 20px;
+	text-align: right;
+	background-color:#00e699;
+	height:60px;
+	border: none;
+	box-shadow: none;
+	width:100%;
+	margin:0 auto;
+	outline: none;
+}
+
+h4, h2{
+	font-size: 30px;
+	width: 100%;
+	padding-top: 40px;
+	color: #1affb2;
+}
+
+h2{font-size: 35px}
+
+ul{
+	color: white;
+	list-style: none;
 }
