@@ -1,6 +1,14 @@
 var e = $.Event("keypress");
 e.which = 13;
 
+$(".box").on("click", function(){
+	if($("span#first").text()!==""& $('input').val() !=="" & $("span#sec").text()!==""){
+		$("span#first").text("");
+		$("span#sec").text("");
+		$("span#sign").text("");
+		$("input").val("");
+	}
+})
 
 $("#numberinput").on("click keypress",function(event){
 	if(event.which===13){
@@ -8,9 +16,9 @@ $("#numberinput").on("click keypress",function(event){
 		if( $("span#first").text()==""){
 		 	  $("span#first").text($(this).val());
 		 	  $(this).val("")
-		//if first span is filled the second span is filled
 		}else{
-			  $("span#sec").text($(this).val());
+			//if first span is filled the second span is filled
+			$("span#sec").text($(this).val());
 			  $(this).val("")
 		}	
 	}
@@ -26,6 +34,7 @@ $(".box").on("click" , function(){
 	$("input").val(z);
 });
 
+
 $("#final").on("click", function(){
 	$("input").trigger(e);
 	//GRABS THE TEXT FROM THE DISPLAY
@@ -35,6 +44,7 @@ $("#final").on("click", function(){
 	//CONVERTS IT INTO NUMBERS
 	var aNum = Number(a)
 	var bNum = Number(b)
+
 	//COMPUTE RESULT
 	if( c==="/"){
 		$("input").val(aNum/bNum);
@@ -46,6 +56,15 @@ $("#final").on("click", function(){
 		$("input").val(aNum-bNum);
 	}if(c==="+"){
 		$("input").val(aNum+bNum)
+	}
+
+	var n=	$("li").length
+
+	if(n<5){
+		$("ul").prepend("<li>"+ $("input").val() + "</li>");
+	}else{
+		$("ul").empty();
+		$("ul").prepend("<li>"+ $("input").val() + "</li>");
 	}
 });
 
@@ -70,12 +89,9 @@ $('button#divide').on("click",function(){
 	$("input").trigger(e);
 });
 
-
 $("#clear").on("click", function(){
 	$("span#first").text("");
 	$("span#sec").text("");
 	$("span#sign").text("");
 	$("input").val("");
 });
-
-
